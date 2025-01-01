@@ -2,6 +2,7 @@
   "name": "new-year",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://kaszubdev.github.io/new-year/",
   "type": "module",
   "scripts": {
     "dev": "vite",
