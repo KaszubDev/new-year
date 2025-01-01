@@ -9,7 +9,7 @@ Title: Total Supremacy
 import { useGLTF } from '@react-three/drei'
 
 export function FireworkStation(props) {
-  const { nodes, materials } = useGLTF('/models/total_supremacy.glb')
+  const { nodes, materials } = useGLTF('./models/total_supremacy.glb')
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -32,4 +32,4 @@ export function FireworkStation(props) {
   )
 }
 
-useGLTF.preload('/models/total_supremacy.glb')
+useGLTF.preload('./models/total_supremacy.glb')

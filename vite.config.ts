@@ -6,5 +6,9 @@ import checker from 'vite-plugin-checker'
 // https://vite.dev/config/
 export default defineConfig({
   base: '/new-year/',
-  plugins: [react(), glsl(), checker({ typescript: false })],
+  plugins: [
+    react(), 
+    glsl(), 
+    checker({ typescript: false }),
+  ],
 })

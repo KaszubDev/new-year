@@ -10,7 +10,7 @@ import FireworksManager from './components/FireworksManager/FireworksManager'
 import { FireworkStation } from "./models/FireworkStation"
 import Text from "./components/Text"
 
-const audio = new Audio('./src/assets/music.mp3')
+const audio = new Audio('./music.mp3')
 audio.volume = 0.2
 audio.loop = true
 
@@ -22,11 +22,11 @@ function App() {
   const [isAnimation, setIsAnimation] = useState(false)
   const [camera, setCamera] = useState(new PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000))
   
-  loader.setDataType( HalfFloatType )
+  // loader.setDataType( HalfFloatType )
   let scene = new Scene();
 
   const loadEnvironment = function () {
-    loader.load( './src/assets/shanghai_bund_4k.hdr', function ( texture ) {
+    loader.load( './shanghai_bund_4k.hdr', function ( texture ) {
       texture.mapping = EquirectangularReflectionMapping;
       texture.needsUpdate = true;
       
