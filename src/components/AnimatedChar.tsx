@@ -14,7 +14,7 @@ const AnimatedChar = ({material}) => {
   const [newCharVisible, setNewCharVisible] = useState(false)
   const refOld = useRef(null)
   const refNew = useRef(null)
-  const fontSrc = "./src/fonts/Anton_Regular.json"
+  const fontSrc = "./Anton_Regular.json"
   const isGlobalAnimationStarted = useContext(CanvasContext)
 
   useEffect(() => {

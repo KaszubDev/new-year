@@ -6,7 +6,7 @@ import { MeshStandardMaterial, Vector3 } from "three";
 import { useFrame } from "@react-three/fiber";
 import CanvasContext from "../CanvasContext";
 
-const fontSrc = "./src/fonts/Anton_Regular.json"
+const fontSrc = "./Anton_Regular.json"
 
 const Text = ({camera, handleOnClick}) => {
     const [isAnimationFirstStep, setIsAnimationFirstStep] = useState(true)
